@@ -31,16 +31,10 @@ Before you start, ensure you have the following installed on your machine:
 
 ## 🚀 Local Development (Step-by-Step)
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/jobster.git
-cd jobster
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 You can install the core scraping library using `pip`:
 ```bash
-pip install -U python-jobster
+pip install -U python-jobspy
 ```
 *(Optional)* If you are running the full automated pipeline with `uv`, use:
 ```bash
@@ -48,7 +42,7 @@ uv sync
 uv run playwright install
 ```
 
-### 3. Environment Setup
+### 2. Environment Setup
 Create your environment configuration to point to your local Ollama instance and configure the AI model.
 ```bash
 cp .env.example .env
@@ -60,7 +54,7 @@ OLLAMA_MODEL=gemma4:31b-cloud
 ```
 Ensure your `keywords.txt` and `google-keywords.txt` files are populated with the job titles you want to search for, and place your resume as a PDF (e.g., `Agentic Ai Engineer.pdf`) in the project directory.
 
-### 4. Run the Development Server
+### 3. Run the Development Server
 To start the automated job scraping and matching pipeline using the scripts:
 ```bash
 uv run python automation.py
