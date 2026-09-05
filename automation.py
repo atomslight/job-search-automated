@@ -9,21 +9,21 @@ import sys
 # SETTINGS
 # ==========================================
 
-PROFILE_DIR = r"E:\JobSpy\chrome-profile"
+PROFILE_DIR = r"E:\Jobster\chrome-profile"
 
 NOTEBOOK_URL = (
     "https://colab.research.google.com/drive/"
     "1Drf1FEG4MmorwmKSkB4RjGJKASWnTtff"
 )
 
-DOWNLOAD_DIR = Path(r"E:\JobSpy\jobs_extracted")
+DOWNLOAD_DIR = Path(r"E:\Jobster\jobs_extracted")
 
-KEYWORDS_FILE = Path(r"E:\JobSpy\keywords.txt")
-GOOGLE_KEYWORDS_FILE = Path(r"E:\JobSpy\google-keywords.txt")
+KEYWORDS_FILE = Path(r"E:\Jobster\keywords.txt")
+GOOGLE_KEYWORDS_FILE = Path(r"E:\Jobster\google-keywords.txt")
 
-USED_KEYWORDS_FILE = Path(r"E:\JobSpy\used_keywords.txt")
+USED_KEYWORDS_FILE = Path(r"E:\Jobster\used_keywords.txt")
 USED_GOOGLE_KEYWORDS_FILE = Path(
-    r"E:\JobSpy\used_google-keywords.txt"
+    r"E:\Jobster\used_google-keywords.txt"
 )
 
 
@@ -237,7 +237,7 @@ def run(playwright: Playwright):
 
         page.locator(
             ".view-lines",
-            has_text="pip install -U python-jobspy"
+            has_text="pip install -U python-jobster"
         ).click()
 
         cell4 = page.get_by_role(
@@ -380,7 +380,7 @@ def run(playwright: Playwright):
 
         print()
         print("====================================")
-        print("JOBSPY COMPLETED SUCCESSFULLY")
+        print("JOBSTER COMPLETED SUCCESSFULLY")
         print("====================================")
         print("File:")
         print(output_file)
@@ -397,7 +397,7 @@ def run(playwright: Playwright):
 
         print()
         print("====================================")
-        print("JOBSPY AUTOMATION FAILED")
+        print("JOBSTER AUTOMATION FAILED")
         print("====================================")
         print(
             "Error type:",

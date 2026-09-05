@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 
-PROFILE_DIR = r"E:\JobSpy\chrome-profile"
+PROFILE_DIR = r"E:\Jobster\chrome-profile"
 NOTEBOOK_URL = "https://colab.research.google.com/drive/1Drf1FEG4MmorwmKSkB4RjGJKASWnTtff"
 
 with sync_playwright() as p:
