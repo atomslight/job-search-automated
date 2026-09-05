@@ -1,5 +1,5 @@
 def main():
-    print("Hello from jobspy!")
+    print("Hello from jobster!")
 
 
 if __name__ == "__main__":
